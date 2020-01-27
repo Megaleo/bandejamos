@@ -60,7 +60,7 @@ class Evento:
 # Lista de Eventos. A ser preenchida:
 eventos = []
 
-for tr in soup.find_all('tr')[3:-1]:
+for tr in soup.find_all('tr')[7:-1]:
     # Transformando da string modificada do BeautifulSoup para uma string (lista de) normal.
     tdsraw = tr.find_all('td')
     tds = []
