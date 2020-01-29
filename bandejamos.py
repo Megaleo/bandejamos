@@ -5,6 +5,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 from bs4 import BeautifulSoup
+from getpass import getpass
 
 # Constantes to bandejão:
 # Limites de tempo para cada refeição (com folga):
@@ -16,7 +17,7 @@ limiteinfjan = datetime.time(17,00,00)
 limitesupjan = datetime.time(21,00,00)
 
 username = input('Username: ')
-password = input('Senha: ')
+password = getpass('Senha: ')
 
 # Dados de login
 loginData = {'codpes' : username,
